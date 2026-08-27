@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Claude Design export bundles. The individual images are the deliverable;
+# the zip is a 5MB duplicate of them and this repo is public.
+*.zip
+
+# Editor / scratch
+*.tmp
+*~
+
+# LinkedIn carousel source pages. These build the PDFs and the covers, then nothing
+# consumes them: Content Sync only scans files sitting directly in linkedin/ and the
+# publishers read URLs from the sheet, not from GitHub. Roughly 5MB a month in a public
+# repo for files nothing reads. Kept on disk so a single page can be fixed or a PDF
+# rebuilt without re-running Claude Design.
+posts/*/linkedin/pages/
